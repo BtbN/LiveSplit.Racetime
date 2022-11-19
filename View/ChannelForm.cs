@@ -168,7 +168,10 @@ namespace LiveSplit.Racetime.View
         private void ShowWebView2DownloadDialog()
         {
             if (this.InvokeRequired)
+            {
                 this.Invoke((Action)(() => ShowWebView2DownloadDialog()));
+                return;
+            }
 
             var downloadButton = new TaskDialogButton("Download") { CommandLinkNote = "This will open in your default web browser." };
             var closeButton = new TaskDialogButton("Close") { CommandLinkNote = "LiveSplit.Racetime will not work until runtimes are installed." };
