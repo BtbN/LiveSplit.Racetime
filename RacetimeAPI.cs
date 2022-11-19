@@ -1,6 +1,4 @@
-﻿using CefSharp;
-using CefSharp.WinForms;
-using LiveSplit.Model;
+﻿using LiveSplit.Model;
 using LiveSplit.Racetime.Controller;
 using LiveSplit.Racetime.Model;
 using LiveSplit.Racetime.View;
